@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/meetups/MeetupDetail.module.css"],"sourcesContent":[".detail {\r\n    text-align: center;\r\n  }\r\n  \r\n  .detail img {\r\n    width: 100%;\r\n  }"],"names":[],"mappings":"AAAA;;;;AAIE"}},
+    {"offset": {"line": 8, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
