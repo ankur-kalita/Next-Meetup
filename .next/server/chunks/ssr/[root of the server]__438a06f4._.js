@@ -443,14 +443,22 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$meetups$2f$New
 ;
 ;
 function NewMeetupPage() {
-    function addMeetupHandler(enteredMeetupData) {
-        console.log(enteredMeetupData);
+    useR;
+    async function addMeetupHandler(enteredMeetupData) {
+        const response = await fetch('/api/new-meetup', {
+            method: 'POST',
+            body: JSON.stringify(enteredMeetupData),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        const data = await response.json();
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$meetups$2f$NewMeetupForm$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
         onAddMeetup: addMeetupHandler
     }, void 0, false, {
         fileName: "[project]/pages/new-meetup/index.js",
-        lineNumber: 7,
+        lineNumber: 17,
         columnNumber: 12
     }, this);
 }
